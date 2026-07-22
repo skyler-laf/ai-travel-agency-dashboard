@@ -1,10 +1,15 @@
 import os
+import sys
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.routes import router
-from backend.auth_routes import router as auth_router
-from backend.database import init_db
 from dotenv import load_dotenv
+
+# Ensure the backend directory is in the python import path (crucial for Vercel vs Local)
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from routes import router
+from auth_routes import router as auth_router
+from database import init_db
 
 # Load environmental configs (.env)
 load_dotenv()

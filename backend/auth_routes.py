@@ -3,7 +3,7 @@ import hashlib
 from typing import Optional, List
 from fastapi import APIRouter, HTTPException, status, Query
 from pydantic import BaseModel
-from backend.database import get_db_connection
+from database import get_db_connection
 
 router = APIRouter()
 

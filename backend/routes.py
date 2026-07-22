@@ -2,7 +2,7 @@ import json
 import asyncio
 from fastapi import APIRouter, Query
 from fastapi.responses import StreamingResponse
-from backend.agents import TravelCoordinatorAgent
+from agents import TravelCoordinatorAgent
 
 router = APIRouter()
 coordinator = TravelCoordinatorAgent()
