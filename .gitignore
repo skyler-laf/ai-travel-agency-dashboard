@@ -1,0 +1,30 @@
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Python virtual environment
+.venv/
+backend/.venv/
+
+# Environment variables & secrets (CRITICAL)
+.env
+.env.local
+.env.*.local
+
+# Local SQLite databases
+backend/travel_agency.db
+*.db
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Frontend builds
+dist/
+frontend/dist/
+
+# OS generated files
+.DS_Store
+Thumbs.db
